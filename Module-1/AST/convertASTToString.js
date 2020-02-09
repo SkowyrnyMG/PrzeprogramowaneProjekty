@@ -10,7 +10,11 @@ const convertASTToString = (tagName, attributes, children) => {
   if (children && children[0].nodeType) {
     if (children[0].nodeType === 'element') {
       children.forEach(child => {
-        html += astToHtml(child.tagName, child.attributes, child.children);
+        html += convertASTToString(
+          child.tagName,
+          child.attributes,
+          child.children
+        );
       });
     }
     if (children[0].nodeType === 'text') {
