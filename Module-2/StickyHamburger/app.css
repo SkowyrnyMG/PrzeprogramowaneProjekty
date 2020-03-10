@@ -94,6 +94,8 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -103,7 +105,6 @@ body {
   opacity: 0;
   pointer-events: none;
   transition: all 0.5s;
-  transform: translateX(-100px);
 }
 
 .navbar-mobile-active {
@@ -113,13 +114,16 @@ body {
   z-index: 1000;
 }
 
+.close-menu {
+  width: 50px;
+  height: 50px;
+}
+
 .close-menu span {
   position: absolute;
   display: inline-block;
   width: 50px;
   height: 4px;
-  left: 50%;
-  transform: translateX(-50%);
   background-color: var(--color-pink);
 }
 

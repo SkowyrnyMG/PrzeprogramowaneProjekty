@@ -14,9 +14,7 @@ npm install
 
 or use demo:
 
-```
 https://skowyrnymg.github.io/PrzeprogramowaneProjekty/Module-2/StickyHamburger/
-```
 
 ### AUTHOR
 
