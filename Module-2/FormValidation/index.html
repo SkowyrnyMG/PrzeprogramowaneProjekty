@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation - Opanuj JS - Mateusz Gruźla</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <form action="" class="form-wrapper">
+        <label for="name-input" class="label name">
+          <input type="text" id="name-input" placeholder="Name" />
+          <span class="info">Name</span>
+        </label>
+
+        <label for="email-input" class="label email">
+          <input type="text" id="email-input" placeholder="Email" />
+          <span class="info">Email</span>
+        </label>
+
+        <label for="password-input" class="label pasword">
+          <input type="password" id="password-input" placeholder="Password" />
+          <span class="info">Password</span>
+        </label>
+
+        <label for="password-input-confirm" class="label password-confirm">
+          <input type="password" id="password-input-confirm" placeholder="Confirm password" />
+          <span class="info">Confirm</span>
+        </label>
+
+        <label for="rodo-agreement" class="label rodo">
+          <span>RODO</span>
+          <input type="checkbox" id="rodo-agreement" />
+          <span class="check">
+            <span class="line"></span>
+            <span class="line"></span>
+          </span>
+        </label>
+
+        <button class="submit">
+          SUBMIT
+        </button>
+      </form>
+    </div>
+
+    <script src="./src/index.js"></script>
+  </body>
+</html>
