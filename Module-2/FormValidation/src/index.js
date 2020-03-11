@@ -1,4 +1,7 @@
 import './styles.scss';
+import { isHigher } from './verifyForm';
+
+isHigher();
 
 const rodoAgreement = document.getElementById('rodo-agreement');
 const rodoCheck = document.querySelectorAll('.line');
