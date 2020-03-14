@@ -97,7 +97,7 @@ test('If confirm does not match password', () => {
   expect(verifyConfirm(password, wrongConfirm)).toBe(false);
 });
 
-test('If confirm does not match password', () => {
+test('If confirm does match password', () => {
   const password = 'matchMe!';
   const wrongConfirm = 'matchMe!';
   expect(verifyConfirm(password, wrongConfirm)).toBe(true);

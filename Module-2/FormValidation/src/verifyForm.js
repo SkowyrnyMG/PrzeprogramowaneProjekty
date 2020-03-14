@@ -9,7 +9,9 @@ const checkPasswordLength = password => password.length >= MIN_PASSWORD_LENGTH;
 const ifPasswordUpperCase = password => password != password.toLowerCase();
 const ifPasswordHasNumber = password => !!password.match(/\d+/);
 const verifyInPasswordSigns = password => !!password.match(/\W+/);
-const verifyConfirm = (password, confirm) => password === confirm;
+const verifyConfirm = (confirm, password) => {
+  return password === confirm && password !== undefined && password !== '';
+};
 const ifRODOBoolean = rodoBtn => typeof rodoBtn === 'boolean';
 
 export {

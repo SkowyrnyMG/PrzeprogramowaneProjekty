@@ -17,17 +17,34 @@ body {
   --color-primary-light: #dcd6f7;
   --color-primary-dark: #a6b1e1;
   --color-primary-darkest: #424874;
+  --color-error: #f93822;
   font-size: 2rem;
   font-family: Prompt, sans-serif;
 }
 
 .wrapper {
+  position: relative;
   width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--color-primary-lightest);
+}
+
+.popup {
+  position: absolute;
+  top: 0;
+  padding: 2rem 3rem;
+  color: var(--color-error);
+  background-color: var(--color-primary-light);
+  border: 2px solid var(--color-primary-darkest);
+  transform: translateY(-100%);
+  transition: transform 0.5s;
+}
+
+.popup-active {
+  transform: translateY(0);
 }
 
 .form-wrapper {
@@ -63,7 +80,7 @@ body {
   left: 0;
   opacity: 0;
   pointer-events: none;
-  transition: all 0.5s 0.5s;
+  transition: transform 0.5s, opacity 0.5s, color 0.2s;
 }
 
 .rodo {

@@ -7,30 +7,34 @@
   </head>
   <body>
     <div class="wrapper">
-      <form action="" class="form-wrapper">
+      <div class="popup">
+        <span>Form could not be submitted! Please fill correctly all empty fields!</span>
+      </div>
+      <form action="https://przeprogramowani.pl/projekt-walidacja" method="POST" class="form-wrapper">
         <label for="name-input" class="label name">
-          <input type="text" id="name-input" placeholder="Name" />
+          <input type="text" id="name-input" placeholder="Name" required />
           <span class="info">Name</span>
         </label>
 
         <label for="email-input" class="label email">
-          <input type="text" id="email-input" placeholder="Email" />
+          <input type="text" id="email-input" placeholder="Email" required />
           <span class="info">Email</span>
         </label>
 
-        <label for="password-input" class="label pasword">
-          <input type="password" id="password-input" placeholder="Password" />
+        <label for="password-input" class="label password">
+          <input type="password" id="password-input" placeholder="Password" required />
           <span class="info">Password</span>
         </label>
 
         <label for="password-input-confirm" class="label password-confirm">
-          <input type="password" id="password-input-confirm" placeholder="Confirm password" />
+          <input type="password" id="password-input-confirm" placeholder="Confirm password" required />
           <span class="info">Confirm</span>
         </label>
 
         <label for="rodo-agreement" class="label rodo">
           <span>RODO</span>
-          <input type="checkbox" id="rodo-agreement" />
+          <input type="checkbox" id="rodo-agreement" required />
+          <span class="info"></span>
           <span class="check">
             <span class="line"></span>
             <span class="line"></span>
