@@ -1,4 +1,4 @@
-import './styles.css';
+import './styles.scss';
 import * as inputRules from './verifyForm';
 
 const rodoAgreement = document.getElementById('rodo-agreement');
